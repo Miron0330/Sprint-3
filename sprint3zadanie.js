@@ -83,7 +83,10 @@ if (checkWord != "Hello") {
   console.log("Zmienna jest równa 'Hello'");
 }
 // c) Użyj operatora ternarnego do przypisania do zmiennej wartości w zależności od innego warunku logicznego.
-
+const workHours = 7;
+const timeForWork =
+  workHours >= 8 ? "Praca będzie zrobiona" : "Zabraknie czasu";
+console.log(timeForWork);
 // d) Napisz warunek, który sprawdzi, czy zmienna age jest większa lub równa 18.
 let age = 18;
 if (age >= 18) {
@@ -92,8 +95,41 @@ if (age >= 18) {
   console.log("liczba jest mniejsza niż 18");
 }
 // e) Stwórz warunek if-else, który sprawdzi, czy tablica jest pusta.
+let Array = [];
+if (Array.length === 0) {
+  console.log("Tablica jest pusta");
+} else {
+  console.log("Tablica nie jest pusta");
+}
 // f) Użyj operatora ternarnego do sprawdzenia, czy zmienna isMember jest prawdziwa, i na tej podstawie przypisz rabat.
+let isMember = true;
+let discount = isMember ? "20% discount" : "without discount";
+console.log(discount);
 // g) Napisz warunek if, który sprawdzi, czy długość ciągu znaków w zmiennej jest większa niż 5.
+let check = "autobus";
+if (check.length > 5) {
+  console.log("jest więcej niż 5 znaków");
+} else {
+  console.log("jest mniej niż 5 znaków");
+}
 // h) Stwórz warunek if-else, który sprawdzi, czy liczba jest parzysta lub nieparzysta.
+let x = 4;
+if (x % 2 === 0) {
+  console.log("liczba jest parzysta");
+} else {
+  console.log("liczba jest nieparzysta");
+}
 // i) Użyj operatora ternarnego do wyboru między dwoma różnymi wartościami tekstowymi w zależności od warunku.
+const carModel = "Prius";
+const makeOfCar = carModel === "Prius" ? "Toyota" : "To nie jest model Toyoty";
+console.log(makeOfCar);
 // j)Napisz warunek if, który sprawdzi, czy obiekt ma określony klucz.
+let object1 = {
+  key1: "value1",
+  key2: "value2",
+};
+if (object1.key1 == "value1") {
+  console.log("zawiera klucz");
+} else {
+  console.log("nie zawiera klucza");
+}
